@@ -20,13 +20,14 @@
   --cor-12: #000000;
   --cor-p1: #ffbb00;
   --cor-p2: #e4a30b;
-  --cor-p3: #a66f00;
-  --cor-p4: #664400;
-  --cor-p5: #332200;
+  --cor-p3: #f2a50c;
+  --cor-p4: #a66f00;
+  --cor-p5: #664400;
+  --cor-p6: #332200;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -34,7 +35,13 @@ ul {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .header-bg {
@@ -47,7 +54,7 @@ a {
   max-width: 1200px;
   background-color: var(--cor-12);
   margin: 0 auto;
-  padding: 20px;  
+  padding: 20px;
   gap: 20px;
   color: var(--cor-0);
   align-items: center;
@@ -57,31 +64,35 @@ a {
 .menu-header {
   display: flex;
   flex-wrap: wrap;
-  
-  gap: 40px;   
+
+  gap: 40px;
 }
 
-.menu-header a {   
+.menu-header a {
   display: inline-block; /* Garantir que o padding funcione corretamente */
-  color: var(--cor-0);  
-  padding: 16px 0px; 
+  color: var(--cor-0);
+  padding: 16px 0px;
   font-size: 18px;
   position: relative;
 }
 
-.header a:after {
-  content: '';
+.header a::after {
+  content: "";
   display: block;
   width: 0%;
   height: 2px;
   background: var(--cor-0);
   margin-top: 4px;
-  transition: .3s;
+  transition: 0.3s;
   position: absolute;
 }
 
 .header a:hover:after {
   width: 100%;
+}
+
+.header > a::after {
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -102,7 +113,7 @@ a {
 
   .header a:after {
     display: none;
-  } 
+  }
 }
 
 @media (max-width: 600px) {
@@ -110,8 +121,61 @@ a {
     gap: 12px;
   }
 
-  .menu-header a {    
+  .menu-header a {
     padding: 8px 12px;
     font-size: 14px;
   }
+}
+
+.introducao-bg {
+  background-color: var(--cor-12);
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  gap: 0px 40px;
+}
+
+.introducao-texto {
+  color: var(--cor-0);
+  align-self: end;
+  padding-bottom: 80px;
+}
+
+.introducao-texto h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125; /* line-height fica relativo ao tamanho da fonte */
+}
+
+.introducao-texto h1 span {
+  color: var(--cor-p1);
+}
+
+.introducao-texto p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5; /* line-height fica relativo ao tamanho da fonte */
+  color: var(--cor-5);
+}
+
+.introducao-texto a {
+  display: inline-block; /* Garantir que o padding funcione corretamente */
+  background: linear-gradient(var(--cor-p1), var(--cor-p3));
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: var(--cor-p6);
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+}
+
+.introducao-texto a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
