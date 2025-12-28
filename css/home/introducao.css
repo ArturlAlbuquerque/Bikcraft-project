@@ -6,10 +6,7 @@
 
 .introducao {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 20px;
+  grid-template-columns: 1fr 1fr;  
   gap: 0px 40px;
 }
 

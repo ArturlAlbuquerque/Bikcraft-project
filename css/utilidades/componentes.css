@@ -1,3 +1,9 @@
+.container {
+  max-width: 1200px;
+  padding:0 20px;
+  margin: 0 auto;
+}
+
 .botao {
   display: inline-block; /* Garantir que o padding funcione corretamente */
   background: linear-gradient(var(--cor-p1), var(--cor-p3));
