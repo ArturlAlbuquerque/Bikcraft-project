@@ -1,13 +1,14 @@
 .seguros-bg {
-    background-color: var(--cor-11);
+  background-color: var(--cor-11);
 }
 
-.seguros-conteudo {
-    padding: 60px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
+.seguros-conteudo { 
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
 .seguros-conteudo h2 {
@@ -63,6 +64,5 @@
 @media (max-width: 800px) {
   .seguros-conteudo {
     grid-template-columns: 1fr;
-    
-  }  
+  }
 }
