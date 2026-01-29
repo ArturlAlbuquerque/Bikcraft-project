@@ -35,7 +35,7 @@
 }
 
 .bicicletas-conteudo h2,
-p {
+.bicicletas-conteudo p {
   grid-column: 1/-1;
 }
 
