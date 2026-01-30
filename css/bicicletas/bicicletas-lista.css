@@ -16,6 +16,12 @@
   overflow-x: auto;
 }
 
+#nimbus .bicicletas-lista ul,
+#magic .bicicletas-lista ul,
+#nebula .bicicletas-lista ul {
+  padding: 0 0 20px 0;
+}
+
 .bicicletas-lista li {
   min-width: 280px;
 }
