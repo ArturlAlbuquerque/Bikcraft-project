@@ -156,8 +156,7 @@
 
 .checkbox-container {
   display: flex;
-  position: relative;
-  cursor: pointer;
+  position: relative;  
   align-items: center;
 }
 
@@ -166,6 +165,7 @@
     400 1rem/1.5 "Roboto",
     sans-serif;
   margin: 1px;
+  cursor: pointer;
 }
 
 .checkbox-container input {
